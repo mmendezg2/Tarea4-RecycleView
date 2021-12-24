@@ -50,8 +50,7 @@ public class AdapterRecyclerEvaluado extends RecyclerView.Adapter<AdapterRecycle
         holder.imgjpj.setText("URL2 img: "+ListaEvaluados.get(position).getImgjpg());
 
         String url=ListaEvaluados.get(position).getImgJPG();
-        String urlImagenDefecto="https://uealecpeterson.net/ws/adminimg/unknown.png";
-
+        
         Glide.with(ContextitoEvaluados).
                 load(ListaEvaluados.get(position).getImgJPG())
                 .placeholder(R.drawable.placeholder)
